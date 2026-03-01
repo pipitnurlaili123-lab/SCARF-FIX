@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: infinity-bot
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: npm install && pip install yt-dlp --break-system-packages || pip install yt-dlp
+    startCommand: node infinity_bot_v9_final.js
+    envVars:
+      - key: NODE_ENV
+        value: production

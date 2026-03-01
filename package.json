@@ -1,0 +1,21 @@
+{
+  "name": "infinity-bot",
+  "version": "9.0.0",
+  "description": "Infinity WhatsApp Bot V9 — XR Engine + Telegram Panel",
+  "type": "module",
+  "main": "infinity_bot_v9_final.js",
+  "scripts": {
+    "start": "node infinity_bot_v9_final.js",
+    "setup": "npm install && pip install yt-dlp --break-system-packages 2>/dev/null || pip install yt-dlp",
+    "postinstall": "pip install yt-dlp --break-system-packages 2>/dev/null || pip install yt-dlp 2>/dev/null || echo 'yt-dlp install skipped'"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.0",
+    "google-tts-api": "^2.0.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "yt-search": "^2.10.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
